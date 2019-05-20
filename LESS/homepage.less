@@ -7,7 +7,7 @@
 //   display: flex;
 // }
 div.features {
-  border: solid black 2px;
+  //   border: solid black 2px;
   display: flex;
 }
 
@@ -44,40 +44,62 @@ div.main-wrapper {
     height: 30px;
     width: 110px;
     background-color: #f4735c;
-    margin-top: 25px;
+    margin: 2.5%;
     font-family: "Work Sans", sans-serif;
     font-weight: bold;
   }
 }
 
-p.text-content {
+.features:nth-child(even) {
+  background-color: #fafafa;
+  border-radius: 10px;
+  flex-direction: row-reverse;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  h2 {
+    font-family: "Roboto", bolder;
+  }
+
+  img {
+    object-fit: cover;
+    height: 70%;
+    margin: 2%;
+  }
+}
+
+.text-content {
   font-family: "Work Sans", sans-serif;
 }
 
-// span.belated {
-//   position: relative;
-// }
+.belated {
+  position: relative;
+}
 
-// .belated::before {
-//   content: "";
-//   position: absolute;
-//   top: 50%;
-//   left: 0;
-//   right: 0;
-//   height: 3px;
-//   background-color: #fc2f70;
-//   transform-origin: center right;
-//   transform: scaleX(0) translateY(-50%);
-//   transition: transform 0.3s ease;
-// }
+.belated::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #f4735c;
+  transform-origin: center right;
+  transform: scaleX(0) translateY(-50%);
+  transition: transform 0.3s ease;
+}
 
-// .belated:hover {
-//   color: black;
-// }
+.belated:hover {
+  color: black;
+}
 
-// .belated:hover::before {
-//   transform-origin: center left;
-//   transform: scaleX(1) translateY(-50%);
-// }
+.belated:hover::before {
+  transform-origin: center left;
+  transform: scaleX(1) translateY(-50%);
+}
 
 // Needs Work
