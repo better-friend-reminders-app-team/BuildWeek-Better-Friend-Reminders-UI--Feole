@@ -1,11 +1,83 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Work+Sans";
-  background-color: red;
+// html,
+// body {
+//   margin: 0 auto;
+//   padding: 0;
+//   //   font-family: "Work Sans", sans-serif;
+//   background-color: white;
+//   display: flex;
+// }
+div.features {
+  border: solid black 2px;
+  display: flex;
 }
 
-div {
-  border: solid black 2px;
+div.main-wrapper {
+  display: flex;
+  max-width: 1000px;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
 }
+
+.main-cta {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-family: "Work Sans", bold;
+    font-size: 60px;
+    font-weight: bolder;
+    padding: 15px;
+  }
+
+  p {
+    font-family: "Work Sans", sans-serif;
+  }
+
+  .sign-up {
+    border-radius: 5px;
+    height: 30px;
+    width: 110px;
+    background-color: #f4735c;
+    margin-top: 25px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+  }
+}
+
+p.text-content {
+  font-family: "Work Sans", sans-serif;
+}
+
+// span.belated {
+//   position: relative;
+// }
+
+// .belated::before {
+//   content: "";
+//   position: absolute;
+//   top: 50%;
+//   left: 0;
+//   right: 0;
+//   height: 3px;
+//   background-color: #fc2f70;
+//   transform-origin: center right;
+//   transform: scaleX(0) translateY(-50%);
+//   transition: transform 0.3s ease;
+// }
+
+// .belated:hover {
+//   color: black;
+// }
+
+// .belated:hover::before {
+//   transform-origin: center left;
+//   transform: scaleX(1) translateY(-50%);
+// }
+
+// Needs Work
