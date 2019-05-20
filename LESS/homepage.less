@@ -6,10 +6,6 @@
 //   background-color: white;
 //   display: flex;
 // }
-div.features {
-  //   border: solid black 2px;
-  display: flex;
-}
 
 div.main-wrapper {
   display: flex;
@@ -19,6 +15,10 @@ div.main-wrapper {
   margin: auto;
 }
 
+div.features {
+  //   border: solid black 2px;
+  display: flex;
+}
 .main-cta {
   display: flex;
   width: 100%;
@@ -54,6 +54,20 @@ div.main-wrapper {
   background-color: #fafafa;
   border-radius: 10px;
   flex-direction: row-reverse;
+
+  h2 {
+    margin: 0 auto;
+  }
+  p {
+    margin-bottom: 25px;
+    margin-left: 15px;
+  }
+}
+
+.features:nth-child(odd) {
+  h2 {
+    margin: 0 auto;
+  }
 }
 
 .features {
@@ -61,24 +75,38 @@ div.main-wrapper {
   flex-direction: row;
   align-items: center;
 
-  h2 {
-    font-family: "Roboto", bolder;
-  }
-
   img {
     object-fit: cover;
     height: 70%;
     margin: 2%;
   }
-}
 
+  h2 {
+    font-weight: bolder;
+  }
+
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 40px;
+    }
+  }
+}
 .text-content {
   font-family: "Work Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+
+  h2 {
+    font-family: "Roboto", bolder;
+    font-size: 2.5em;
+  }
 }
 
 .belated {
   position: relative;
-}
+  text-decoration: line-through;
 
 .belated::before {
   content: "";
@@ -102,4 +130,17 @@ div.main-wrapper {
   transform: scaleX(1) translateY(-50%);
 }
 
-// Needs Work
+footer {
+  display: flex;
+  width: 100%;
+  //   background-color: #fafafa;
+  height: 50px;
+  align-content: center;
+  p {
+    font-family: "Work Sans", sans-serif;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+}
