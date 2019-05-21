@@ -929,6 +929,7 @@ div.features {
 }
 .features:nth-child(even) p {
   margin-bottom: 25px;
+  margin-top: 5px;
   text-align: center;
 }
 @media (max-width: 500px) {
@@ -993,6 +994,39 @@ div.features {
   .text-content h2 {
     font-size: 20px;
   }
+}
+.testimonial {
+  margin: 20px;
+}
+.testimonial h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .testimonial h2 {
+    font-size: 20px;
+  }
+}
+.slider {
+  display: flex;
+}
+.slider .slider-content {
+  background-color: #fafafa;
+  border-radius: 20px;
+  margin: 10px;
+  text-align: center;
+  padding: 5px;
+}
+.slider h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.slider p {
+  font-family: "Roboto", sans-serif;
 }
 .belated {
   position: relative;
