@@ -871,15 +871,15 @@ div.features {
   display: flex;
 }
 .login {
-  display: flex;
-  align-content: flex-end;
-  justify-content: flex-end;
-  width: 100%;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  margin-top: 20px;
 }
 .login button {
   height: 30px;
   width: 100px;
-  margin-right: 50px;
+  margin-right: 20px;
   border-radius: 5px;
   background-color: #3f3d56;
   color: white;
@@ -906,6 +906,7 @@ div.features {
 }
 .main-cta p {
   font-family: "Work Sans", sans-serif;
+  margin-left: 15px;
 }
 .main-cta .sign-up {
   border-radius: 5px;
@@ -915,10 +916,10 @@ div.features {
   margin: 2.5%;
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
+  color: white;
 }
 .features:nth-child(even) {
   background-color: #fafafa;
-  border-radius: 10px;
   flex-direction: row-reverse;
   width: 100%;
 }
@@ -927,7 +928,6 @@ div.features {
 }
 .features:nth-child(even) p {
   margin-bottom: 25px;
-  margin-left: 15px;
 }
 .features:nth-child(odd) {
   width: 100%;

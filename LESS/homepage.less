@@ -29,15 +29,19 @@ div.features {
 // }
 
 .login {
-  display: flex;
-  align-content: flex-end;
-  justify-content: flex-end;
-  width: 100%;
+  //   position: absolute;
+  //   top: 20px;
+  //   left: 65%;
+  display: inline-block;
+  position: absolute;
+  //   width: 30%;
+  right: 10px;
+  margin-top: 20px;
 
   button {
     height: 30px;
     width: 100px;
-    margin-right: 50px;
+    margin-right: 20px;
     border-radius: 5px;
     background-color: #3f3d56;
     color: white;
@@ -66,6 +70,7 @@ div.features {
 
   p {
     font-family: "Work Sans", sans-serif;
+    margin-left: 15px;
   }
 
   .sign-up {
@@ -76,12 +81,13 @@ div.features {
     margin: 2.5%;
     font-family: "Work Sans", sans-serif;
     font-weight: bold;
+    color: white;
   }
 }
 
 .features:nth-child(even) {
   background-color: #fafafa;
-  border-radius: 10px;
+  //   border-radius: 10px;
   flex-direction: row-reverse;
   width: 100%;
 
@@ -90,7 +96,7 @@ div.features {
   }
   p {
     margin-bottom: 25px;
-    margin-left: 15px;
+    // margin-left: 15px;
   }
 }
 
