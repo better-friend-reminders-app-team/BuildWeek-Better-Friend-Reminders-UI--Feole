@@ -4,23 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Happy Birthday!</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans&display=swap"
       rel="stylesheet"
     />
     <link href="dist/hamburgers.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/index.css" />
+    <script src="/menu/menu.js" async></script>
   </head>
   <body>
     <header>
-      <button class="hamburger hamburger--collapse" type="button">
+      <div class="hamburger hamburger--arrow" type="button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
-      </button>
-      <button class="login">Log In</button>
+      </div>
+      <div class="login"><button>Log In</button></div>
     </header>
+    <div class="menu">
+      <ul>
+        <a href="index.html"><li>Home</li></a>
+        <a href="about.html"><li>About Us</li></a>
+      </ul>
+    </div>
     <div class="main-wrapper">
       <div class="main-cta">
         <h1>Happy <span class="belated">Belated</span> Birthday</h1>
@@ -30,7 +37,7 @@
         </p>
         <button class="sign-up">Sign Up</button>
       </div>
-      <div class="features first">
+      <div class="features fullwidth first">
         <img
           src="/assets/undraw_happy_birthday_s72n.svg"
           alt=""
@@ -58,7 +65,7 @@
           </p>
         </div>
       </div>
-      <div class="features third">
+      <div class="features fullwidth third">
         <img src="/assets/undraw_having_fun_iais.svg" alt="" class="party" />
         <div class="text-content">
           <h2>Lorem Babadook</h2>
@@ -77,6 +84,14 @@
             Ipsum
           </p>
         </div>
+      </div>
+      <div class="slider">
+        <div class="slider-content"></div>
+        <div class="slider-content"></div>
+        <div class="slider-content"></div>
+        <div class="slider-content"></div>
+        <div class="slider-content"></div>
+        <div class="slider-content"></div>
       </div>
     </div>
     <footer><p>Birthday Wishes 2019</p></footer>

@@ -9,7 +9,7 @@
 
 div.main-wrapper {
   display: flex;
-  max-width: 1000px;
+  max-width: 2500px;
   justify-content: center;
   flex-direction: column;
   margin: auto;
@@ -19,6 +19,32 @@ div.features {
   //   border: solid black 2px;
   display: flex;
 }
+
+// header {
+//   display: flex;
+//   align-content: center;
+//   justify-content: flex-end;
+//   width: 100%;
+//   border: 1px dashed orange;
+// }
+
+.login {
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+
+  button {
+    height: 30px;
+    width: 100px;
+    margin-right: 50px;
+    border-radius: 5px;
+    background-color: #3f3d56;
+    color: white;
+  }
+}
+
+// banner
 .main-cta {
   display: flex;
   width: 100%;
@@ -33,6 +59,9 @@ div.features {
     font-size: 60px;
     font-weight: bolder;
     padding: 15px;
+    @media (max-width: 500px) {
+      font-size: 40px;
+    }
   }
 
   p {
@@ -54,6 +83,7 @@ div.features {
   background-color: #fafafa;
   border-radius: 10px;
   flex-direction: row-reverse;
+  width: 100%;
 
   h2 {
     margin: 0 auto;
@@ -65,30 +95,36 @@ div.features {
 }
 
 .features:nth-child(odd) {
+  width: 100%;
   h2 {
     margin: 0 auto;
   }
 }
-
+.fullwidth {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
 .features {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  max-height: 450px;
+  //   max-width: 1000px;
 
   img {
     object-fit: cover;
     height: 70%;
     margin: 2%;
+    @media (max-width: 500px) {
+      height: 50%;
+    }
   }
 
   h2 {
     font-weight: bolder;
-  }
-
-  @media (max-width: 480px) {
-    h2 {
-      font-size: 40px;
-    }
   }
 }
 .text-content {
@@ -100,35 +136,45 @@ div.features {
 
   h2 {
     font-family: "Roboto", bolder;
-    font-size: 2.5em;
+    font-size: 40px;
+  }
+  @media (max-width: 500px) {
+    h2 {
+      font-size: 20px;
+    }
   }
 }
+
+// title styling
 
 .belated {
   position: relative;
   text-decoration: line-through;
 
-.belated::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background-color: #f4735c;
-  transform-origin: center right;
-  transform: scaleX(0) translateY(-50%);
-  transition: transform 0.3s ease;
+  .belated::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #f4735c;
+    transform-origin: center right;
+    transform: scaleX(0) translateY(-50%);
+    transition: transform 0.3s ease;
+  }
+
+  .belated:hover {
+    color: black;
+  }
+
+  .belated:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1) translateY(-50%);
+  }
 }
 
-.belated:hover {
-  color: black;
-}
-
-.belated:hover::before {
-  transform-origin: center left;
-  transform: scaleX(1) translateY(-50%);
-}
+// footer
 
 footer {
   display: flex;
