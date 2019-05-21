@@ -93,10 +93,17 @@ div.features {
 
   h2 {
     margin: 0 auto;
+    margin-top: 10px;
   }
   p {
     margin-bottom: 25px;
-    // margin-left: 15px;
+    text-align: center;
+  }
+  @media (max-width: 500px) {
+    p {
+      //   margin-left: 15px;
+      text-align: left;
+    }
   }
 }
 
@@ -105,9 +112,13 @@ div.features {
   h2 {
     margin: 0 auto;
   }
+  p {
+    text-align: center;
+  }
   @media (max-width: 500px) {
     p {
       margin-left: 15px;
+      text-align: left;
     }
   }
 }

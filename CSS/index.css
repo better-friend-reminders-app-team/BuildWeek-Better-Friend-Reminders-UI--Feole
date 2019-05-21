@@ -925,9 +925,16 @@ div.features {
 }
 .features:nth-child(even) h2 {
   margin: 0 auto;
+  margin-top: 10px;
 }
 .features:nth-child(even) p {
   margin-bottom: 25px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .features:nth-child(even) p {
+    text-align: left;
+  }
 }
 .features:nth-child(odd) {
   width: 100%;
@@ -935,9 +942,13 @@ div.features {
 .features:nth-child(odd) h2 {
   margin: 0 auto;
 }
+.features:nth-child(odd) p {
+  text-align: center;
+}
 @media (max-width: 500px) {
   .features:nth-child(odd) p {
     margin-left: 15px;
+    text-align: left;
   }
 }
 .fullwidth {
@@ -1169,11 +1180,15 @@ button {
   display: flex;
   flex-direction: column;
   width: 30%;
-  margin: 40px;
+  margin: 5px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: 350px;
+}
+.about-head h2 {
+  font-weight: bold;
+  padding-bottom: 5px;
 }
 @media (max-width: 500px) {
   .about-head {
