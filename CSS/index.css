@@ -829,6 +829,37 @@
   bottom: 0;
   transform: rotate(-90deg);
 }
+.menu {
+  display: none;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  width: 150px;
+  height: 100vh;
+  /* This give the height 100% of the screen or, '100% of View Height' */
+  background-color: white;
+  border: 1px solid #fafafa;
+  border-left: none;
+  border-bottom: none;
+  z-index: 2;
+  text-decoration: none;
+  /* This set the layer level of the element, it has precendence over initial level of 1*/
+}
+.menu ul li {
+  list-style-type: none;
+  font-size: 22px;
+  padding: 30px 0;
+  text-align: center;
+  border-bottom: 1px solid #fafafa;
+  text-decoration: none;
+}
+.menu ul a {
+  text-decoration: none;
+  color: black;
+}
+.menu--open {
+  display: block;
+}
 div.main-wrapper {
   display: flex;
   max-width: 2500px;
@@ -838,6 +869,26 @@ div.main-wrapper {
 }
 div.features {
   display: flex;
+}
+header {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  width: 100%;
+  border: 1px dashed orange;
+}
+.login {
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+}
+.login button {
+  height: 30px;
+  width: 100px;
+  margin-right: 50px;
+  border-radius: 5px;
+  background-color: #f4735c;
 }
 .main-cta {
   display: flex;
@@ -853,6 +904,11 @@ div.features {
   font-size: 60px;
   font-weight: bolder;
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .main-cta h1 {
+    font-size: 40px;
+  }
 }
 .main-cta p {
   font-family: "Work Sans", sans-serif;
@@ -903,13 +959,13 @@ div.features {
   height: 70%;
   margin: 2%;
 }
+@media (max-width: 500px) {
+  .features img {
+    height: 50%;
+  }
+}
 .features h2 {
   font-weight: bolder;
-}
-@media (max-width: 480px) {
-  .features h2 {
-    font-size: 40px;
-  }
 }
 .text-content {
   font-family: "Work Sans", sans-serif;
@@ -920,7 +976,12 @@ div.features {
 }
 .text-content h2 {
   font-family: "Roboto", bolder;
-  font-size: 2.5em;
+  font-size: 40px;
+}
+@media (max-width: 500px) {
+  .text-content h2 {
+    font-size: 20px;
+  }
 }
 .belated {
   position: relative;
