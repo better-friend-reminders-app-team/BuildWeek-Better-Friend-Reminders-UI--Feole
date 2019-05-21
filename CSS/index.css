@@ -1158,7 +1158,6 @@ button {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  border: 1px dashed orange;
 }
 .about-head {
   display: flex;
@@ -1169,7 +1168,6 @@ button {
   justify-content: center;
   align-items: center;
   height: 350px;
-  border: 2px solid red;
 }
 @media (max-width: 500px) {
   .about-head {
