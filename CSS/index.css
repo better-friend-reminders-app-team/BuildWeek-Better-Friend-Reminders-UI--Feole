@@ -947,7 +947,7 @@ div.features {
 }
 @media (max-width: 500px) {
   .features:nth-child(odd) p {
-    margin-left: 15px;
+    margin-left: 19px;
     text-align: left;
   }
 }
