@@ -870,13 +870,6 @@ div.main-wrapper {
 div.features {
   display: flex;
 }
-header {
-  display: flex;
-  align-content: center;
-  justify-content: flex-end;
-  width: 100%;
-  border: 1px dashed orange;
-}
 .login {
   display: flex;
   align-content: flex-end;
@@ -888,7 +881,8 @@ header {
   width: 100px;
   margin-right: 50px;
   border-radius: 5px;
-  background-color: #f4735c;
+  background-color: #3f3d56;
+  color: white;
 }
 .main-cta {
   display: flex;
@@ -1149,4 +1143,48 @@ table {
 }
 button {
   border: none;
+}
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  max-width: 2500px;
+}
+.about-text-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 1px dashed orange;
+}
+.about-head {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  border: 2px solid red;
+}
+@media (max-width: 500px) {
+  .about-head {
+    width: 50%;
+  }
+}
+.about-head img {
+  border-radius: 80px;
+}
+.about-head h2 {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  margin-top: 10px;
+}
+.about-head p {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
 }
