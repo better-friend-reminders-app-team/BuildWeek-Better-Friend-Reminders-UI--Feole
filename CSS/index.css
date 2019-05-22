@@ -1227,6 +1227,8 @@ button {
 }
 .about-head img {
   border-radius: 80px;
+  max-width: 150px;
+  max-height: 150px;
 }
 .about-head h2 {
   text-align: center;
@@ -1236,4 +1238,19 @@ button {
 .about-head p {
   text-align: center;
   font-family: "Work Sans", sans-serif;
+}
+.about-head a {
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.about-head .fab {
+  font-size: 1.9rem;
+  text-align: center;
+  text-decoration: none;
+  text-emphasis: none;
+  text-shadow: 1px;
+}
+.head-text {
+  display: flex;
+  flex-direction: column;
 }
