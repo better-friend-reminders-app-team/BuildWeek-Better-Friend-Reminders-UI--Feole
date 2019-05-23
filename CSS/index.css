@@ -885,6 +885,11 @@ div.features {
   background-color: #3f3d56;
   color: white;
 }
+.login button:hover {
+  background-color: white;
+  color: #3f3d56;
+  border: 1px solid #3f3d56;
+}
 .main-cta {
   display: flex;
   width: 100%;
@@ -918,6 +923,11 @@ div.features {
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
   color: white;
+}
+.main-cta .sign-up:hover {
+  background-color: white;
+  color: #f4735c;
+  border: 1px solid #f4735c;
 }
 .features:nth-child(even) {
   background-color: #fafafa;
@@ -1321,10 +1331,26 @@ button {
   height: 30px;
   width: 110px;
   background-color: #f4735c;
-  margin: 2.5%;
+  margin: 5.5%;
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
   color: white;
-  position: relative;
-  bottom: 20px;
+}
+@media (max-width: 700px) {
+  .plans .sign-up {
+    margin-top: 0px;
+  }
+}
+.plans .sign-up:hover {
+  background-color: #fafafa;
+  color: #f4735c;
+  border: 1px solid #f4735c;
+}
+.plans .unlimited {
+  margin-top: 32px;
+}
+@media (max-width: 700px) {
+  .plans .unlimited {
+    margin-top: 0px;
+  }
 }
