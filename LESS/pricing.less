@@ -1,0 +1,42 @@
+.pricing-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  //   justify-items: center;
+  align-items: center;
+  border: 2px solid orange;
+  max-width: 33%;
+  height: 500px;
+  background-color: #fafafa;
+  border-radius: 15px;
+  margin: 0 auto;
+  h2 {
+    // display: flex;
+    font-family: "Work Sans", sans-serif;
+    font-size: 40px;
+  }
+  li {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .sign-up {
+    border-radius: 5px;
+    height: 30px;
+    width: 110px;
+    background-color: #f4735c;
+    margin: 2.5%;
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+}
