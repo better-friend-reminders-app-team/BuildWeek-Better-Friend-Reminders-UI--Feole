@@ -3,9 +3,12 @@
   flex-direction: row;
   width: 100%;
   justify-content: center;
+  align-content: center;
 
-  @media (max-width: 800px) {
+  @media (max-width: 700px) {
     flex-direction: column;
+    justify-items: center;
+    align-items: center;
   }
 }
 
@@ -14,20 +17,44 @@
   flex-direction: column;
   //   justify-items: center;
   align-items: center;
-  border: 2px solid orange;
+  //   border: 2px solid orange;
   max-width: 33%;
-  height: 500px;
+  width: 33%;
+  //   min-width: 33%;
+  height: 350px;
   background-color: #fafafa;
   border-radius: 15px;
-  margin: 0 auto;
+  margin: 10px;
+  @media (max-width: 700px) {
+    width: 55%;
+    max-width: 55%;
+    min-width: 45%;
+    margin: 10px auto;
+    height: 250px;
+  }
   h2 {
     // display: flex;
     font-family: "Work Sans", sans-serif;
-    font-size: 40px;
+    font-size: 30px;
+    text-decoration-line: underline;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    @media (max-width: 700px) {
+      font-size: 25px;
+    }
+  }
+  ul {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 75%;
   }
   li {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    // height: 20px;
+    margin: 5%;
+    text-align: center;
   }
   .sign-up {
     border-radius: 5px;
