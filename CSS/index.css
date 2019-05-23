@@ -836,7 +836,6 @@
   left: 0;
   width: 150px;
   height: 100vh;
-  /* This give the height 100% of the screen or, '100% of View Height' */
   background-color: white;
   border: 1px solid #fafafa;
   border-left: none;
@@ -1008,9 +1007,6 @@ div.features {
   .testimonial h2 {
     font-size: 20px;
   }
-}
-.slider {
-  display: flex;
 }
 .slider .slider-content {
   background-color: #fafafa;
@@ -1231,6 +1227,8 @@ button {
 }
 .about-head img {
   border-radius: 80px;
+  max-width: 150px;
+  max-height: 150px;
 }
 .about-head h2 {
   text-align: center;
@@ -1240,4 +1238,19 @@ button {
 .about-head p {
   text-align: center;
   font-family: "Work Sans", sans-serif;
+}
+.about-head a {
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.about-head .fab {
+  font-size: 1.9rem;
+  text-align: center;
+  text-decoration: none;
+  text-emphasis: none;
+  text-shadow: 1px;
+}
+.head-text {
+  display: flex;
+  flex-direction: column;
 }
